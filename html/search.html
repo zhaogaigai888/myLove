@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>搜索</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/loginClass.css">
+    <link rel="stylesheet" href="../css/search.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span class="back fa fa-angle-left"></span>
+            <input type="text" placeholder="按姓名搜索医生" id="txt">
+            <span class="search fa fa-search"></span>
+        </header>
+    </div>
+    <script src="../js/zepto.min.js"></script>
+    <script>
+        var txt = document.getElementById("txt");
+        txt.addEventListener("focus", function (e) {
+            //var event = window.event || e;
+            //event.preventDefault();
+            this.style.outLine = "#C0326A"
+        }, false)
+    </script>
+</body>
+
+</html>
